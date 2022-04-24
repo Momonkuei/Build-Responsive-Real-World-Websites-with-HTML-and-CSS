@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Inter:wght@100;200;300;400&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #343a40;
+    line-height: 1;
+}
+
+img {
+    height: 200px;
+    border-radius: 8px;
+    transform: scale(1.5);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.carousel {
+    background-color: #087f5b;
+    width: 800px;
+    margin: 100px auto;
+    padding: 32px 48px 32px 86px;
+    // padding: 32px;
+    // padding-left: 86px;
+    // padding-right: 48px;
+    // border-radius: 8px;
+    // color: #fff;
+
+    // 排版
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 86px;
+}
+
+.testimonialText {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    color: #e6fcf5;
+}
+
+.testimonialAuthor {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #c3fae8;
+}
+
+.testimonialJob {
+    font-size: 12px;
+    color: #c3fae8;
+}
+
+// 控制
+.btn {
+    background-color: #fff;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+
+    position: absolute;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, .2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.btnIcon {
+    height: 30px;
+    width: 30px;
+    stroke: #087f5b;
+
+}
+
+.btnLeft {
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btnRight {
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.dots {
+    display: flex;
+    gap: 12px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 32px);
+
+    .dot {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 2px solid #087f5b;
+        cursor: pointer;
+    }
+
+    .check1 {
+        background-color: #087f5b;
+    }
+
+}

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika&family=Inter:wght@100;200;300;400&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+table {
+  margin-top: 100px;
+  width: 800px;
+  border-collapse: collapse;
+}
+
+table thead th {
+  background-color: #087f5b;
+  color: #fff;
+  width: 25%;
+}
+
+table th,
+table td {
+  padding: 16px 24px;
+  text-align: left;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+/*# sourceMappingURL=style.css.map */
