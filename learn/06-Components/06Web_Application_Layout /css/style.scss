@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Inter:wght@100;200;300;400&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #343a40;
+    font-size: 24px;
+    line-height: 1;
+    height: 100vh;
+    text-align: center;
+    font-weight: bold;
+
+    display: grid;
+    grid-template-columns: 80px 400px 1fr 250px;
+    grid-template-rows: 80px 1fr;
+
+}
+
+nav,
+section,
+main,
+aside {
+    padding-top: 24px;
+}
+
+nav {
+    background-color: #343a40;
+    color: #fff;
+    grid-row: 1/-1;
+}
+
+menu {
+    background-color: #7048e8;
+    grid-column: 2/-1;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 0 40px;
+}
+
+menu button {
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    background: #5f3dc4;
+    color: #fff;
+    padding: 8px 12px;
+}
+
+menu button:last-child {
+    background-color: #c2255c;
+    margin-left: auto;
+}
+
+aside {
+    background-color: #e9ecef;
+}
+
+section {
+    background-color: #e9ecef;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow: scroll;
+
+}
+
+.email {
+    background: #adb5bd;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
