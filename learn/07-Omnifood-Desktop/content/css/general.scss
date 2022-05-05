@@ -38,6 +38,7 @@ Default:1
 
 --- 06 BORDER_RADIUS
 default : 9px 
+Medium : 11px
 
 ----07 WHITESPACE
 SPACING SYSTEM (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -51,12 +52,6 @@ SPACING SYSTEM (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
     box-sizing: border-box;
 }
 
-// margin
-
-.marginRightSm {
-    margin-right: 1.6rem;
-}
-
 body {
     font-family: "Rubik", sans-serif;
     line-height: 1;
@@ -64,13 +59,34 @@ body {
     color: #555;
 }
 
+//字元標籤
+strong {
+    font-weight: 500;
+}
+
+// margin
+
+.marginRightSm {
+    margin-right: 1.6rem !important;
+}
+
+.marginBottomMd {
+    margin-bottom: 3rem !important;
+}
+
+
 
 
 /*********************/
 /*組件系列 */
 /*********************/
 
-
+/*********************/
+/*Helper/SETTINGS CLASSES*/
+/*********************/
+.center-text {
+    text-align: center;
+}
 
 /*標題 */
 /*********************/
@@ -152,6 +168,22 @@ body {
 
     color: #fff;
     box-shadow: inset 0 0 0 3px #fff;
+}
+
+.link:link,
+.link:visited {
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+    color: #cf711f;
+    border: 1px solid transparent;
 }
 
 /********************/

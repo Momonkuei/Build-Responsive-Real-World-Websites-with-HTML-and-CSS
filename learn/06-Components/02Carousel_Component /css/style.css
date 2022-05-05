@@ -12,6 +12,23 @@ body {
   line-height: 1;
 }
 
+.carousel {
+  max-width: 800px;
+  padding: 32px 48px 32px 86px;
+  margin: 100px auto;
+  background-color: #087f5b;
+  border-radius: 8px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 86px;
+  position: relative;
+}
+
 img {
   height: 200px;
   border-radius: 8px;
@@ -21,19 +38,10 @@ img {
           box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
 
-.carousel {
-  background-color: #087f5b;
-  width: 800px;
-  margin: 100px auto;
-  padding: 32px 48px 32px 86px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  gap: 86px;
+.testimonialText,
+.testimonialAuthor,
+.testimonialJob {
+  color: #e6fcf5;
 }
 
 .testimonialText {
@@ -41,39 +49,36 @@ img {
   font-weight: 500;
   line-height: 1.5;
   margin-bottom: 32px;
-  color: #e6fcf5;
 }
 
 .testimonialAuthor {
   font-size: 14px;
   margin-bottom: 4px;
-  color: #c3fae8;
 }
 
 .testimonialJob {
   font-size: 12px;
-  color: #c3fae8;
 }
 
 .btn {
   background-color: #fff;
   border: none;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
   position: absolute;
-  -webkit-box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .btnIcon {
@@ -84,40 +89,37 @@ img {
 
 .btnLeft {
   left: 0;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .btnRight {
   right: 0;
-  top: 50%;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
+  -webkit-transform: translate(50%, 0);
+          transform: translate(50%, 0);
 }
 
 .dots {
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  -webkit-transform: translate(-50%, 32px);
-          transform: translate(-50%, 32px);
 }
 
 .dots .dot {
   height: 12px;
   width: 12px;
-  border-radius: 50%;
   background-color: #fff;
   border: 2px solid #087f5b;
-  cursor: pointer;
+  border-radius: 50%;
 }
 
-.dots .check1 {
+.dots .dot-Fill {
   background-color: #087f5b;
 }
 /*# sourceMappingURL=style.css.map */
