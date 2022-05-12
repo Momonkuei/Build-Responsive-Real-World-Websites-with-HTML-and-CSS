@@ -204,7 +204,15 @@ strong {
     column-gap: 3rem;
     row-gap: 6rem;
 
+    // margin-bottom: 9.6rem;
 
+    // &:last-child {
+    //     margin-bottom: 0;
+    // }
+
+    &:not(:last-child) {
+        margin-bottom: 9.6rem;
+    }
 }
 
 .grid-2-cols {
@@ -221,4 +229,30 @@ strong {
 
 .grid--center-v {
     align-items: center;
+}
+
+
+/********************/
+/*list系列＊／
+/*******************/
+
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.list-item {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.list-icon {
+    width: 2rem;
+    height: 2rem;
+    color: #e67e22;
 }
