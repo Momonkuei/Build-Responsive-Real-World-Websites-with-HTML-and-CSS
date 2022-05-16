@@ -31,7 +31,11 @@ Default:1
 #fdf2e9
 #fae5d3
 
-- Shades: #cf711f
+#eb984e //-20%
+- Shades: 
+#cf711f
+#45260a
+
 - Accents:
 - Greys:
 
@@ -40,6 +44,8 @@ Default:1
 // #333
 
 --- 05 ShADOWS
+
+ box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 --- 06 BORDER_RADIUS
 default : 9px 
@@ -56,11 +62,17 @@ SPACING SYSTEM (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
           box-sizing: border-box;
 }
 
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+  font-size: 1.6rem;
 }
 
 strong {
@@ -72,7 +84,7 @@ strong {
 }
 
 .marginBottomMd {
-  margin-bottom: 3rem !important;
+  margin-bottom: 4.8rem !important;
 }
 
 /*********************/
@@ -97,26 +109,26 @@ strong {
 }
 
 .headingPrimary {
-  font-size: 3.5rem;
+  font-size: 5.2rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
 }
 
 .headingSecondary {
-  font-size: 2.2rem;
+  font-size: 4.4rem;
   line-height: 1.2;
-  margin-bottom: 6rem;
+  margin-bottom: 9.6rem;
 }
 
 .headingTertiary {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1.2;
-  margin-bottom: 2rem;
+  margin-bottom: 3.2rem;
 }
 
 .subheading {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: #cf711f;
   text-transform: uppercase;
@@ -126,16 +138,21 @@ strong {
 
 /*按鈕 */
 /*********************/
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 600;
   text-decoration: none;
-  padding: 1rem 2em;
+  padding: 1.6rem 3.2em;
   border-radius: 9px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  /*  Only necessary for .btn  */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btnFull:link,
@@ -165,6 +182,23 @@ strong {
   color: #fff;
   -webkit-box-shadow: inset 0 0 0 3px #fff;
           box-shadow: inset 0 0 0 3px #fff;
+}
+
+/********************/
+/* 表單按鈕 */
+/********************/
+.btn-form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  padding: 1.2rem;
+}
+
+.btn-form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -202,6 +236,9 @@ strong {
   -webkit-column-gap: 3rem;
           column-gap: 3rem;
   row-gap: 6rem;
+}
+
+.grid:not(:last-child) {
   margin-bottom: 9.6rem;
 }
 
@@ -238,24 +275,30 @@ strong {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1rem;
+  gap: 1.6rem;
 }
 
 .list-item {
-  font-size: 1rem;
+  font-size: 1.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0.5rem;
+  gap: 1.6rem;
 }
 
 .list-icon {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   color: #e67e22;
+}
+
+*:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+          box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 .header {
@@ -736,5 +779,137 @@ strong {
 .plan-sing-up {
   text-align: center;
   margin-top: 4.8rem;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/********************/
+/* feature Section*/
+/********************/
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/********************/
+/*CTA  Section*/
+/********************/
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -webkit-box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#eb984e), to(#e67e22));
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.cta .headingSecondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(235, 151, 78, 0.35)), to(rgba(230, 125, 34, 0.35))), url("../img/eating.jpg");
+  background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35)), url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cta-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 3.2rem;
+          column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::-webkit-input-placeholder,
+.cta-form select::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+.cta-form input:-ms-input-placeholder,
+.cta-form select:-ms-input-placeholder {
+  color: #aaa;
+}
+
+.cta-form input::-ms-input-placeholder,
+.cta-form select::-ms-input-placeholder {
+  color: #aaa;
+}
+
+.cta-form input::placeholder,
+.cta-form select::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+          box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
 /*# sourceMappingURL=style.css.map */
