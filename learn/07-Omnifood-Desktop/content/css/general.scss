@@ -7,7 +7,11 @@ FONT SIZE SYSTEM (px)
 - Font weight
 
 -Line heights
-
+default:1;
+small:1.05;
+medium:1.2
+Paragraph default:1.6
+large:1.8
 
 
 Default:1
@@ -35,6 +39,8 @@ Default:1
 - Accents:
 - Greys:
 
+#888
+#767676 (lightest gray allowed on #fff
 #6f6f6f (lightest grey allowed on #fdf2e9
 // #555
 // #333
@@ -73,6 +79,10 @@ body {
     font-weight: 400;
     color: #555;
     font-size: 1.6rem;
+
+
+    /* Only works if there is nothing absolutely positioned in relation to body  */
+    overflow-x: hidden;
 }
 
 //字元標籤
@@ -153,7 +163,7 @@ strong {
     font-weight: 600;
     text-decoration: none;
 
-    padding: 1.6rem 3.2em;
+    padding: 1.6rem 3.2rem;
     border-radius: 9px;
     transition: all 0.2s ease;
 
@@ -265,6 +275,10 @@ strong {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.grid-5-cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
 .grid--center-v {
     align-items: center;
 }
@@ -287,6 +301,7 @@ strong {
     display: flex;
     align-items: center;
     gap: 1.6rem;
+    line-height: 1.2;
 }
 
 .list-icon {

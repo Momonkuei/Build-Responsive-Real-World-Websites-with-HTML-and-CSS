@@ -10,8 +10,8 @@
     background-color: #fdf2e9;
 
 
-    height: 6rem;
-    padding: 0 4rem;
+    height: 9.6rem;
+    padding: 0 4.8rem;
 }
 
 
@@ -27,7 +27,7 @@
 
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 4.8rem;
 
 }
 
@@ -61,6 +61,28 @@
     transform: scale(0.98);
 }
 
+
+/* MOBILE */
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+
+    &[name='close-outline'] {
+        display: none;
+    }
+}
+
+
 /********************/
 /* Hero Section*/
 /********************/
@@ -70,13 +92,13 @@
 }
 
 .hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    padding: 0 2rem;
-    max-width: 90rem;
+    gap: 9.6rem;
     align-items: center;
-    gap: 6rem;
 
 }
 
@@ -150,7 +172,7 @@
     justify-content: space-around;
 
     img {
-        height: 2rem;
+        height: 3.2rem;
         filter: brightness(0);
         opacity: 50%;
     }
@@ -169,7 +191,7 @@
 }
 
 .stepNumber {
-    font-size: 5rem;
+    font-size: 8.6rem;
     font-weight: 600;
     color: #ccc;
     margin-bottom: 1.2rem;
@@ -249,7 +271,7 @@
 
 .meal-contact {
 
-    padding: 2rem 3rem 3rem 3rem;
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
 .meal-tags {
@@ -334,7 +356,7 @@
 }
 
 .testimonial-container {
-    padding: 3rem;
+    padding: 9.6rem;
 }
 
 .testimonials {
@@ -353,9 +375,9 @@
 }
 
 .testimonial-text {
-    font-size: 1.2rem;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
 }
 
 .testimonial-name {
@@ -390,7 +412,7 @@
 /********************/
 
 .section-pricing {
-    padding: 6rem 0;
+    padding: 9.6rem 0;
 
 }
 
@@ -402,15 +424,15 @@
     width: 75%;
 }
 
-.princing-plan--starter {
+.pricing-plan-starter {
     justify-self: end;
     border: 2px solid #fdf2e9;
-    padding: 46px;
+    padding: 4.6rem;
 }
 
-.princing-plan-complete {
+.pricing-plan-complete {
     background-color: #fdf2e9;
-    padding: 48px;
+    padding: 4.8rem;
     position: relative;
     overflow: hidden;
 
@@ -425,7 +447,7 @@
         font-size: 1.4rem;
         font-weight: 700;
         background-color: #ffd43b;
-        padding: 8px 80px;
+        padding: 0.8rem 8rem;
         transform: rotate(45deg);
     }
 }
@@ -508,7 +530,11 @@
 /********************/
 
 .section-cta {
-    padding: 9.6rem 0;
+    /* top /right /bottom /left */
+    // padding: 9.6rem 0 12.8rem 0;
+
+    /*top /horizontal /left */
+    padding: 4.8rem 0 12.8rem;
 }
 
 .cta {
@@ -597,4 +623,83 @@
 
     box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 
+}
+
+/********************/
+/*FOOTER*/
+/********************/
+
+.footer {
+    border-top: 1px solid #eee;
+    padding: 12.8rem 0;
+}
+
+.grid--footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #767676;
+    margin-top: auto;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+}
+
+.footer-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.contacts {
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+    .address {
+        margin-bottom: 2.4rem;
+    }
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 0.3s;
+}
+
+
+.footer-link:hover,
+.footer-link:active {
+    color: #555;
 }
